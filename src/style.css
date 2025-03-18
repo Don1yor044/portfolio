@@ -75,6 +75,16 @@ button:focus {
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+
+.active svg {
+  color: #c770f0 !important;
+}
+
+/* Aktiv holatdagi span (matn) rangi */
+.active span {
+  color: #c770f0 !important; /* Matn rangi */
+  margin-left: 8px; /* Icon va matn orasida joy tashlash */
+}
 .sticky {
   background-color: #1b1a2ea9 !important;
   transition: all 0.3s ease-out 0s !important;

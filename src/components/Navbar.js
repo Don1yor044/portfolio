@@ -54,10 +54,13 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
+            <Nav.Item >
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}
+                className={location.pathname === "/" ? "active" : ""}
+
               >
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <AiOutlineHome style={{ marginBottom: "4px" }} />
+                <span style={{ marginLeft: "5px" }}>Home</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -66,8 +69,11 @@ function NavBar() {
                 as={Link}
                 to="/about"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/about" ? "active" : "activeEmas"}
+
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                <AiOutlineUser style={{ marginBottom: "4px" }} />
+                <span style={{ marginLeft: "5px" }}>About</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -76,11 +82,13 @@ function NavBar() {
                 as={Link}
                 to="/project"
                 onClick={() => updateExpanded(false)}
+                className={location.pathname === "/project" ? "active" : ""}
+
               >
                 <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
+                  style={{ marginBottom: "4px" }}
                 />{" "}
-                Projects
+                <span style={{ marginLeft: "5px" }}>Projects</span>
               </Nav.Link>
             </Nav.Item>
 
@@ -88,9 +96,13 @@ function NavBar() {
               <Nav.Link
                 as={Link}
                 to="/resume"
-                onClick={() => updateExpanded(false)}
+                onClick={() => updateExpanded(false)
+                }
+                className={location.pathname === "/resume" ? "active" : ""}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "4px" }} />
+                <span style={{ marginLeft: "5px" }}>Resume</span>
+
               </Nav.Link>
             </Nav.Item>
 
@@ -107,7 +119,7 @@ function NavBar() {
           </Nav>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+    </Navbar >
   );
 }
 
