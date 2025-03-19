@@ -11,7 +11,7 @@ function AboutCard() {
             Hi Everyone, I am <span className="purple">Mamaraimov Doniyor </span>
             from <span className="purple">O'zbekiston, Toshkent.</span>
             <br />
-            I am currently employed as a frontend developer at ...
+            I am currently employed as a frontend developer at Abu-Sahiy online market
 
             <br />
             <br />
