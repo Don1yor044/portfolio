@@ -14,10 +14,18 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
         {!props.isSecret === true ? <>
-          <Button variant="primary" href={"https://" + props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            {props.isBlog ? "Blog" : "GitHub"}
-          </Button>
+          {props.isBlog ?
+            <Button variant="primary"
+              href={"https://" + props.demoLink} target="_blank">
+              <CgWebsite /> &nbsp;
+              {"Demo"}
+            </Button> : <></>
+          }
+          {!props.isBlog ?
+            <Button variant="primary" href={"https://" + props.ghLink} target="_blank" style={{ marginLeft: "10px" }}>
+              <BsGithub /> &nbsp;
+              {"GitHub"}
+            </Button> : <></>}
           {"\n"}
           {"\n"}
 

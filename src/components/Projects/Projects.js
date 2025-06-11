@@ -24,7 +24,7 @@ function Projects() {
               isBlog={false}
               isSecret={false}
               title="GMT"
-              description="Hospital Patient Services and Platform This Device platform helps the staff. Main uses: Multilingual interface: The platform is compatible with three languages ​​(Uzbek, Russian, English) for ease of use for people of different nationalities. Hospital information: address, usage, working hours. Medical equipment store: buy monitors, thermometers and other equipment online."
+              // description="Hospital Patient Services and Platform This Device platform helps the staff. Main uses: Multilingual interface: The platform is compatible with three languages ​​(Uzbek, Russian, English) for ease of use for people of different nationalities. Hospital information: address, usage, working hours. Medical equipment store: buy monitors, thermometers and other equipment online."
               ghLink="github.com/Don1yor044/GMT"
               demoLink="gmt-iota.vercel.app/"
             />
@@ -36,7 +36,7 @@ function Projects() {
               isBlog={false}
               isSecret={false}
               title="Fast-Food Admin"
-              description="Fast-Food Admin Panel is a comprehensive software solution designed to manage all the activities of a fast-food company. This platform allows administrators to track sales, manage orders, control branches and manage employees. Key features: Increase business efficiency by tracking products sold and revenue. View orders in real time and ensure delivery. Monitor the performance of all branches and coordinate them with each other. Increase team productivity by managing employee data and responsibilities."
+              // description="Fast-Food Admin Panel is a comprehensive software solution designed to manage all the activities of a fast-food company. This platform allows administrators to track sales, manage orders, control branches and manage employees. Key features: Increase business efficiency by tracking products sold and revenue. View orders in real time and ensure delivery. Monitor the performance of all branches and coordinate them with each other. Increase team productivity by managing employee data and responsibilities."
               ghLink="github.com/Don1yor044/FilialsFoodAdmin"
               demoLink="filials-food-admin.vercel.app/"
             />
@@ -45,10 +45,19 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={editor}
-              isBlog={false}
-              isSecret={true}
-              title="Abu sahiy Admin"
-              description=""
+              isBlog={true}
+              isSecret={false}
+              title="Abu-Sahiy Dashboard"
+              // description="Abu-Sahiy Dashboard is a management panel that allows employees to monitor and manage products efficiently."
+              demoLink="dashboard.abusahiy.uz/"
+            />
+          </Col> <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={editor}
+              isBlog={true}
+              isSecret={false}
+              title="Abu-Sahiy Seller"
+              demoLink="seller.abusahiy.uz/login"
             />
           </Col>
 
